@@ -1,0 +1,20 @@
+<form [formGroup]="mathForm">
+  <span class="math">{{ mathForm.value.a }}</span>
+  <span class="math">{{ mathForm.value.mathOp }}</span>
+  <span class="math">{{ mathForm.value.b }}</span>
+  <span class="math">=</span>
+  <input formControlName="answer" class="input"/>
+</form>
+
+
+<br>
+<hr>
+<div>Form is valid: {{ mathForm.valid }}</div>
+<br>
+<div>Form values:
+  <pre>{{ mathForm.value | json }}</pre>
+</div>
+<br>
+<div>Form errors:
+  <pre>{{ mathForm.errors | json }}</pre>
+</div>

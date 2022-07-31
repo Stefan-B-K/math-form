@@ -1,0 +1,16 @@
+.math, .input {
+  display: inline-block;
+  font-size: x-large;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.math {
+  width: 30px;
+}
+
+.input {
+  width: 50px;
+  height: 40px;
+}
