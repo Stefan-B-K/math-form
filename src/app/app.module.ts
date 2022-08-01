@@ -4,9 +4,10 @@ import { ReactiveFormsModule } from "@angular/forms";
 
 import { AppComponent } from './app.component';
 import { EquationComponent } from './equation/equation.component';
+import { HighlightAnswerDirective } from './highlight-answer.directive';
 
 @NgModule({
-  declarations: [AppComponent, EquationComponent],
+  declarations: [AppComponent, EquationComponent, HighlightAnswerDirective],
   imports: [BrowserModule, ReactiveFormsModule],
   providers: [],
   bootstrap: [AppComponent]

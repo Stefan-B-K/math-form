@@ -1,20 +1,29 @@
 <form [formGroup]="mathForm">
-  <span class="math">{{ mathForm.value.a }}</span>
-  <span class="math">{{ mathForm.value.mathOp }}</span>
-  <span class="math">{{ mathForm.value.b }}</span>
-  <span class="math">=</span>
-  <input formControlName="answer" class="input"/>
+    <span class="math">{{ mathForm.value.a }}</span>
+    <span class="math">{{ mathForm.controls.mathOp.value }}</span>
+    <span class="math">{{ mathForm.value.b }}</span>
+    <span class="math">=</span>
+    <input
+        formControlName="answer"
+        appHighlightAnswer
+        class="input"
+        autofocus/>
 </form>
 
+<div class="stats">Statistics:
+    <b style="margin: 0 2px 0 6px">
+        {{ secondsPerSolution | number: '1.1-3' }}
+    </b> s per solution
+</div>
 
-<br>
-<hr>
-<div>Form is valid: {{ mathForm.valid }}</div>
-<br>
-<div>Form values:
-  <pre>{{ mathForm.value | json }}</pre>
-</div>
-<br>
-<div>Form errors:
-  <pre>{{ mathForm.errors | json }}</pre>
-</div>
+<!--<br>-->
+<!--<hr>-->
+<!--<div>Form is valid: {{ mathForm.valid }}</div>-->
+<!--<br>-->
+<!--<div>Form values:-->
+<!--  <pre>{{ mathForm.value | json }}</pre>-->
+<!--</div>-->
+<!--<br>-->
+<!--<div>Form errors:-->
+<!--  <pre>{{ mathForm.errors | json }}</pre>-->
+<!--</div>-->

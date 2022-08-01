@@ -1,16 +1,46 @@
+form {
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+}
+
 .math, .input {
-  display: inline-block;
-  font-size: x-large;
-  text-align: center;
-  margin: 0;
-  padding: 0;
+    display: inline-block;
+    font-size: x-large;
+    text-align: center;
+    margin: 0;
+    padding: 0;
 }
 
 .math {
-  width: 30px;
+    width: 30px;
 }
 
 .input {
-  width: 50px;
-  height: 40px;
+    width: 50px;
+    height: 40px;
+    border: none;
+}
+
+.stats {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 10%;
+}
+
+.close {
+    background-color: rgba(255, 255, 234, 0.8);
+}
+
+.closer {
+    background-color: rgba(241, 253, 220, 0.9);
+}
+
+.closest {
+    background-color: #defcc6;
+}
+
+.hit {
+    background-color: #c2fca7;
 }
